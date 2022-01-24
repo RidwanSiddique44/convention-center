@@ -11,8 +11,16 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Font AWesome Link -->
     <script src="https://kit.fontawesome.com/9414891f28.js" crossorigin="anonymous"></script>
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <!-- Plane CSS -->
     <style>
+        body {
+            font-family: 'Roboto Slab', serif;
+        }
+
         .highlight-card {
             position: relative;
             bottom: 20px;
@@ -72,7 +80,9 @@
                         <h3>The Center of Hospitality</h3>
                         <p>Located conveniently in the heart of Central Texas, the Fantasy Convention Center is the
                             perfect place for your next event.</p>
-                        <button type="button" class="btn btn-light px-5 py-1 text-primary fw-bolder">Book Now</button>
+                        <a target="_blank" href="https://www.bashundharaconvention.com/rates-and-fees"> <button
+                                type="button" class="btn btn-light px-5 py-1 text-primary fw-bolder">Book
+                                Now</button></a>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -81,7 +91,8 @@
                         <h3>2.5 Thousand Square feet of Exhibit Space</h3>
                         <p>Where you can plan a business meeting or a wedding reception, our experienced staff looks
                             forward to serving you.</p>
-                        <button type="button" class="btn btn-light px-5 py-1 text-primary fw-bolder">Resorces</button>
+                        <a target="_blank" href="https://www.linkedin.com/signup"> <button type="button"
+                                class="btn btn-light px-5 py-1 text-primary fw-bolder">Resources</button></a>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -90,7 +101,8 @@
                         <h3>Where Everything is Steps Away</h3>
                         <p>The Fantasy Culinary Services team welcomes you. Whether you are planning a three-course meal
                             or need a simple break service, our team looks forward to making your event a success.</p>
-                        <button type="button" class="btn btn-light px-5 py-1 text-primary fw-bolder">Events</button>
+                        <a target="_blank" href="https://web.facebook.com/?_rdc=1&_rdr"> <button type="button"
+                                class="btn btn-light px-5 py-1 text-primary fw-bolder">Events</button></a>
                     </div>
                 </div>
             </div>
@@ -109,36 +121,45 @@
     <!-- Header-part End -->
     <!-- Main-part -->
     <main>
-        <section class="container">
+        <div class="toast show align-items-center ms-auto mt-5" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex border-start border-primary">
+                <div class="toast-body">
+                    <i class="fas fa-gift text-primary"></i> 20% off on next booking.
+                </div>
+                <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+        <section class="container mt-5">
+            <h1 class="text-center">Our Services</h1>
             <div class="row  g-4">
-                <div class="col">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card border border-primary shadow-lg rounded">
+                        <img src="images/convention-4.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">Parties</h5>
+                            <p class="card-text">We organize birthday party, marriage ceremony party, re-union and all
+                                kinds of party with favourable cost and high quality services.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card border border-primary shadow-lg rounded">
+                        <img src="images/convention-5.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">Weddings</h5>
+                            <p class="card-text">Fantasy convention center is the most popular wedding venue. We provide
+                                master class wedding facilities and make your dream wedding into reality.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card border border-primary shadow-lg rounded">
+                        <img src="images/convention-6.png" class="card-img-top" height="238" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">Conference</h5>
+                            <p class="card-text">We have huge big conference hall with high quality services.You can
+                                arrange any kind of conference in your dearest fantasy convention center.</p>
                         </div>
                     </div>
                 </div>
@@ -335,9 +356,14 @@
                     <div class="col-12">
                         <h4 class="text-white fw-light">Get the App</h4>
                     </div>
-                    <div class="col-12"><img src="logo/aplay.svg" alt=""></div>
+                    <div class="col-12"><a target="_blank"
+                            href="https://apps.apple.com/us/app/apple-store/id375380948"><img src="logo/aplay.svg"
+                                alt=""></a></div>
 
-                    <div class="col-12"><img src="logo/gplay.png" width="120" alt=""></div>
+                    <div class="col-12"><a target="_blank"
+                            href="https://play.google.com/store/apps/details?id=com.twitter.android&hl=en&gl=US"><img
+                                src="logo/gplay.png" width="120" alt=""></a>
+                    </div>
 
                 </div>
             </div>
